@@ -212,7 +212,37 @@
 				  "id": 2,
 				  "saldo": 1000.0,
 				  "estado": "sin registro"
+				},
+    {
+	  "type": "requisiciones",
+      "name": "BienesServicios",
+      "id": 1,
+      "items": [		  
+			{
+			  "type": "bienes",
+			  "name": "BienesServicios",
+		      "id": 1000,
+			  "fecha": "2020-05-12",
+			  "monto": 1000,
+			  "items": [
+				{
+		      	  "type": "factura",
+				  "name": "factura",
+				  "monto": 1000,
+				  "id": 1,
+				  "estado": "factura tramitada"
+				},
+				{
+		      	  "type": "CuentasXPagar",
+				  "name": "CuentaXPagar",
+				  "monto": 1000,
+				  "id": 1,
+				  "estado": "En deuda"
+				   "fecha": "2020-05-12",
 				}
+				
+				
+				
 			  ]
 			}
       ]

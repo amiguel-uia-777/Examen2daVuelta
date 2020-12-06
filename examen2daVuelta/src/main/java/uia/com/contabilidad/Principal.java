@@ -2,7 +2,7 @@ package uia.com.contabilidad;
 
 import uia.com.contabilidad.proveedores.GestorProveedores;
 
-public class Principal {
+public class Principal extends validaAprovacionCuentasXPagar{
 
 	public static void main(String[] args) {
 		
@@ -13,7 +13,12 @@ public class Principal {
 		
 		miGestorProveedores.registraCheque("Alfonso", "Cheques", "ProveedorX");
 		
+		System.out.println( “Ingresa la cuenta a aprobar o un 0 se no la hay”);
 		
+		 Scanner scanIn = new Scanner(System.in); 
+	     nomCuenta = scanIn.nextLine();
+		
+		validaAprovacionCuentaXPagar(String nomCuenta);
 	}
 
 }
